@@ -31,11 +31,13 @@
       </nav>
 </br>
       <?php
-      $valor = @$_GET['p'];
+      $valor = $_GET['p'] ?? 'Footer' ;
       if($valor == 'FormCadastro') { require_once 'Views/FormCadastro.php'; }
       if($valor == 'FormVizualiza') { require_once 'Views/FormVizualiza.php'; }
       if($valor == 'Footer') { require_once 'Views/Footer.php'; }
       ?>
     
     </body>
+
+   
 </html>
